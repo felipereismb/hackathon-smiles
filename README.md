@@ -1,6 +1,5 @@
 Este projeto foi criado com [Create React App](https://github.com/facebook/create-react-app).
 
-Programa Brasis: se baseia em um intercâmbio de trabalho em âmbito nacional, cujo objetivo é a evolução pessoal, profissional e cultural do jovem, impactando também, a realidade da sociedade na qual ele está inserido.
 
 # Scripts
 
