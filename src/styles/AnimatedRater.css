@@ -3,26 +3,28 @@
   padding: 0;
   outline: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-html, body, #root {
+html,
+body,
+#root {
   min-height: 100%;
-  height:100%;
+  height: 100%;
 }
 
 body {
   -webkit-font-smoothing: antialiased !important;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 button {
-  background-color: #F57921;
+  background-color: #f57921;
   cursor: pointer;
 }
 
 button:hover {
-  opacity: 0.85;;
+  opacity: 0.85;
 }
 
 .container:hover input ~ .checkmark {
@@ -30,7 +32,7 @@ button:hover {
 }
 
 .container input:checked ~ .checkmark {
-  background-color: #F57921;
+  background-color: #f57921;
 }
 
 .checkmark:after {
@@ -66,7 +68,7 @@ button:hover {
   width: 30px;
   height: 30px;
   border-radius: 50% 50% 50% 0;
-  background: linear-gradient(to top, #F57921 0%, #014359 100%);
+  background: linear-gradient(to top, #f57921 0%, #014359 100%);
   position: relative;
   transform: rotate(-45deg);
   left: 50%;
@@ -88,7 +90,6 @@ button:hover {
   margin: 11px 0px 0px -12px;
   transform: rotateX(55deg);
   z-index: -2;
-  
 }
 .pulse::after {
   content: "";
