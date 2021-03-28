@@ -3,12 +3,16 @@ import React from "react";
 import HeaderComponent from "app/components/UI/header";
 import ContainerPagesComponent from "app/components/UI/containerPages";
 
-import ScreenIntro from "app/screens/intro";
+import HomeScreen from "app/screens/home";
 
 export default () => {
   return (
     <>
-      <ScreenIntro />
+      <HeaderComponent />
+
+      <ContainerPagesComponent>
+        <HomeScreen />
+      </ContainerPagesComponent>
     </>
   );
 };
