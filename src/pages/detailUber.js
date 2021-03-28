@@ -60,8 +60,9 @@ export default () => {
               onClick={() => Router.push("/home")}
               src="imgs/icons/dash-selected.svg"
               alt="authentication"
-            />
+              />
             <img
+              onClick={() => Router.push("/novoSonho")}
               style={{ height: "20px", width: "auto" }}
               src="imgs/icons/novo.svg"
               alt="authentication"

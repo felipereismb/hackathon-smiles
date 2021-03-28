@@ -78,12 +78,12 @@ export default () => {
         {steps >= 0 && (
           <>
             <BalaoJaque>
-              Vai ao posto de gasolina? Não esqueça de usar seu cartão de
-              crédito para acumular milhas!! Não sabe como?
+              Vai ao posto de gasolina? Não esqueça de usar seu cartão Go Smiles
+              para acumular milhas!! Não sabe como?
             </BalaoJaque>
 
             <BalaoJaque>
-              Ao utilizar o cartão de crédito das Smiles em postos credenciados,
+              Ao utilizar o cartão de crédito Go Smiles em postos credenciados,
               você ganha milhas e elas ajudam você a realizar o seus sonhos
             </BalaoJaque>
           </>
@@ -95,7 +95,7 @@ export default () => {
 
         {steps >= 3 && (
           <BalaoJaque>
-            A cada R$50,00 pagos com o cartão smiles você recebe 7 milhas! 🤓
+            A cada R$50,00 pagos com o cartão Go Smiles você recebe 7 milhas! 🤓
           </BalaoJaque>
         )}
 
@@ -177,7 +177,11 @@ export default () => {
             borderTop: "1px solid #e5e5e5",
           }}
         >
-          <img src="imgs/ajudeAJaque.svg" alt="ajudeAJaque" />
+          <img
+            onClick={() => Router.push("/jaqueDicas")}
+            src="imgs/ajudeAJaque.svg"
+            alt="ajudeAJaque"
+          />
         </div>
       )}
     </>

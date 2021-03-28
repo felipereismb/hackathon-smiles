@@ -6,7 +6,22 @@ import { Card, ProgressBar, Progress, ContainerBar } from "./styles";
 const HomeComponent = () => {
   return (
     <>
-      <div className="container mx-auto px-2 pt-12">
+      <div className="container mx-auto px-2">
+        <p
+          className="py-5"
+          style={{
+            color: "#F57921",
+            fontFamily: "Josefin Sans",
+            fontStyle: "normal",
+            fontWeight: "bold",
+            fontSize: "24px",
+            lineHeight: "24px",
+            textAlign: "center",
+          }}
+        >
+          Salvador - BA
+        </p>
+
         <div className="flex gap-x-4">
           <Card>
             <p>Sonho</p>
@@ -17,7 +32,7 @@ const HomeComponent = () => {
             <div>4.166 m</div>
           </Card>
           <Card>
-            <p>Anual</p>
+            <p>Atual</p>
             <div>12.500 m</div>
           </Card>
         </div>
@@ -87,7 +102,7 @@ const HomeComponent = () => {
           />
           <img
             style={{ height: "20px", width: "auto" }}
-            onClick={() => Router.push("/jaqueDicas")}
+            onClick={() => Router.push("/novoSonho")}
             src="imgs/icons/novo.svg"
             alt="authentication"
           />

@@ -76,10 +76,10 @@ export const Arrow = styled.div`
   background: #fff;
   height: 3px;
   position: absolute;
-  width: 118px;
+  width: 150px;
 
   right: 20px;
-  top: 541px;
+  top: ${({ shopping }) => (shopping ? "591px" : "541px")};
 
   &:before,
   &:after {
@@ -102,12 +102,42 @@ export const Arrow = styled.div`
   z-index: 999;
 `;
 
+export const ArrowBack = styled.div`
+  background: #fff;
+  height: 3px;
+  position: absolute;
+  width: 50px;
+
+  left: 20px;
+  top: 775px;
+
+  &:before,
+  &:after {
+    content: "";
+    width: 3px;
+    height: 10px;
+    transform: skew(-30deg);
+    background: #fff;
+    position: absolute;
+    top: -8px;
+    left: -1px;
+  }
+
+  &:after {
+    transform: skew(30deg);
+    top: 0px;
+  }
+
+  cursor: pointer;
+  z-index: 999;
+`;
+
 export const ArrowText = styled.div`
   position: absolute;
-  width: 102px;
+  width: ${({ shopping }) => (shopping ? "150px" : "102")};
   height: 23px;
-  left: 240px;
-  top: 512px;
+  left: ${({ shopping }) => (shopping ? "210px" : "210px")};
+  top: ${({ shopping }) => (shopping ? "535px" : "510px")};
 
   font-style: normal;
   font-weight: 500;
@@ -125,6 +155,7 @@ export const Input = styled.input`
   height: 59px;
 
   background: #ffffff;
+
   /* Grey Smiles */
 
   border: 1px solid #7c7c7c;
@@ -136,7 +167,7 @@ export const Input = styled.input`
 `;
 
 export const ArrowContinue = styled.div`
-  background: #fff;
+  background: ${({ cor }) => (cor === "roxo" ? "#70009b" : "#ffffff")};
   height: 3px;
   position: absolute;
   width: 118px;
@@ -150,7 +181,7 @@ export const ArrowContinue = styled.div`
     width: 3px;
     height: 10px;
     transform: skew(30deg);
-    background: #fff;
+    background: ${({ cor }) => (cor === "roxo" ? "#70009b" : "#ffffff")};
     position: absolute;
     top: -8px;
     right: -1px;
@@ -170,14 +201,14 @@ export const ArrowTextContinue = styled.div`
   width: 102px;
   height: 23px;
   left: 240px;
-  bottom: ${({ step }) => (step !== 3 ? "40px" : "70px")};
+  bottom: ${({ step }) => (step < 5 ? "40px" : "70px")};
 
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
 
-  color: #ffffff;
+  color: ${({ cor }) => (cor === "roxo" ? "#70009b" : "#ffffff")};
 
   cursor: pointer;
   z-index: 999;
