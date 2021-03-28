@@ -1,0 +1,81 @@
+{
+  "name": "hashmap",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.19.2",
+    "bootstrap": "^4.4.1",
+    "dotenv": "^8.2.0",
+    "google-map-react": "^2.1.9",
+    "immer": "^6.0.1",
+    "isomorphic-dompurify": "^0.5.0",
+    "moment": "^2.24.0",
+    "next": "^9.2.2",
+    "next-redux-wrapper": "^5.0.0",
+    "nextjs-fonts": "^0.22.0",
+    "postcss-preset-env": "^6.7.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.0",
+    "react-animated-css": "^1.2.1",
+    "react-dom": "^16.13.0",
+    "react-filepond": "^7.0.1",
+    "react-google-maps": "^9.4.5",
+    "react-icons": "^3.9.0",
+    "react-modal": "^3.11.2",
+    "react-modern-calendar-datepicker": "^3.1.6",
+    "react-motion": "^0.5.2",
+    "react-rater": "^5.1.1",
+    "react-reactions": "github:randomdipesh/react-reactions",
+    "react-scripts": "3.4.0",
+    "react-share": "^4.1.0",
+    "rxfire": "^3.10.1",
+    "rxjs": "^6.5.4",
+    "shortid": "^2.2.15",
+    "styled-components": "^5.2.1",
+    "tailwindcss": "^1.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-import-static-files": "^1.0.4",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "babel-plugin-styled-components": "^1.10.7",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jam3": "^0.2.3",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.18.3",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "prettier": "^1.19.1"
+  },
+  "scripts": {
+    "dev": "next -p 4200",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
